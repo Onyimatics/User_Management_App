@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import UserForm from './UserForm';
 import UsersContext from '../../../context/UsersContext';
+import './CreateUser.scss';
 
 const CreateUser = ({ history }) => {
   const { users, setUsers } = useContext(UsersContext);

@@ -1,0 +1,33 @@
+body table {
+  color: var(--color-solid) !important;
+}
+
+body table tr:hover {
+  color: var(--color-solid) !important;
+}
+
+.user-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.edit-btn {
+border: none !important;
+  color: var(--color-button-primary) !important;
+}
+
+.delete-btn {
+  color: var(--color-error-msg)!important;
+}
+
+button {
+  border: none !important;
+}
+
+.message {
+  color: var(--color-error-msg);
+  font-size: 20px;
+  margin-left: 10px;
+}

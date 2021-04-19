@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
 import { v4 as uuidv4 } from 'uuid';
+import './CreateUser.scss';
 
 const UserForm = (props) => {
   const [user, setUser] = useState(() => {
@@ -134,7 +135,7 @@ const UserForm = (props) => {
             onChange={handleInputChange}
           />
         </Form.Group>
-        <Button variant="primary" type="submit" className="submit-btn pull-center">
+        <Button variant="primary" type="submit" className="submit-btn">
           Submit
         </Button>
       </Form>

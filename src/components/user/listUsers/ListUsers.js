@@ -2,7 +2,7 @@ import React from 'react';
 import _ from 'lodash';
 import { Table } from 'react-bootstrap';
 import { useHistory } from 'react-router-dom';
-import './ListUsers.css';
+import './ListUsers.scss';
 
 const ListUsers = ({ users, setUsers }) => {
     const history = useHistory();
@@ -12,7 +12,6 @@ const ListUsers = ({ users, setUsers }) => {
   const renderHeader = () => {
         let headerElement = ['First Name', 'Last Name', 'Email Address', 'Phone Number', 'Birth Date',
         'Edit', 'Delete']
-
         return headerElement.map((key, index) => {
             return <th key={index}>{key.toUpperCase()}</th>
         })

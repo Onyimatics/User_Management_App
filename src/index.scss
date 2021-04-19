@@ -1,0 +1,78 @@
+body {
+    background: var(--color-surface);
+    color: var(--color-solid);
+}
+
+:root {
+  --color-surface: #fff;
+  --color-solid: #000000;
+  --color-light-black: #696969;
+  --color-main-form: #222222;
+  --color-button-primary: #0278d5;
+  --color-highlight-background: rgba(173, 216, 230, 0.1);
+  --color-wrapper-border: #f0f0f0;
+  --color-header-content-border: #ccc;
+  --color-error-msg: #f21e08;
+  --color-error-msg-bg: #fff0f0;
+  --color-success-msg: #00ff00;
+  --color-success-msg-bg: #077707;
+  --color-letter-p: #aaa;
+}
+
+// body {
+//   font-family: Noto Sans, Helvetica, sans-serif;
+//   color: var(--color-light-black);
+//   letter-spacing: 1px;
+//   padding: 10px;
+//   min-height: 100vh;
+// }
+
+.main-content {
+  width: 80%;
+  margin: auto auto 100px auto;
+}
+
+.main {
+  margin-left: 10px;
+}
+
+.errorMsg {
+  color: var(--color-error-msg);
+  background: var(--color-error-msg-bg);
+  padding: 10px;
+}
+
+.successMsg {
+  color: var(--color-success-msg);
+  background: var(--color-success-msg-bg);
+  padding: 10px;
+}
+
+.centered-message {
+  width: 500px;
+  margin: auto;
+}
+
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  header {
+    .links {
+      a {
+        font-size: 1.2rem;
+      }
+
+      .link:link,
+      .link:visited {
+        margin: unset;
+      }
+    }
+  }
+
+  .main-form {
+    width: 100%;
+    
+  }
+}
